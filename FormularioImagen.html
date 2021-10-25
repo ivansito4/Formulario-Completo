@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Formulario</title>
+</head>
+<body>
+<form target="_blank" method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+<table border="5" style="background-color: 00FFFF;text-align: center;">
+<tr bgcolor="F9E4B7">
+<th colspan="2" style="background-color: F9E4B7 ;color: indianred;">User Form</th>
+</tr>
+<tr bgcolor="00FFFF">
+	<td><label for="nombre">Escriba el Nombre</label></td>
+	<td><input placeholder="Escriba aquí" id="nombre" type="nombre" name="nombre"></td>
+</tr>
+<tr bgcolor="00FFFF">
+	<td><label for="password">Escriba la Contraseña</label></td>
+	<td><input placeholder="Escriba aquí" id="password" type="password" name="password"></td>
+</tr>
+<tr bgcolor="00FFFF">
+	<td><label for="direccion">Escriba la Dirección</label></td>
+	<td><textarea placeholder="Escriba aquí" id="direccion" type="direccion" name="direccion"></textarea> </td>
+</tr>
+<tr bgcolor="00FFFF" >
+	<td >Seleccinar juego</td>
+	<td style align="left"><input type="checkbox" id="hockey" name="deportes[]" value="Hockey">
+    <label for="hockey">Hockey</label><br>
+    <input type="checkbox" id="football" name="deportes[]" value="Football">
+    <label for="fotball">Football</label><br>
+    <input type="checkbox" id="badminton" name="deportes[]" value="Badminton">
+    <label for="badminton">Badminton</label><br>
+    <input type="checkbox" id="cricket" name="deportes[]" value="Cricket">
+    <label for="cricket">Cricket</label><br> 
+    <input type="checkbox" id="volleyball" name="deportes[]" value="Volleyball">
+    <label for="volleyball">Volleyball</label><br> </td>
+</tr>
+<tr bgcolor="00FFFF">
+	<td> Género </td>
+	<td style align="left"> 
+	<input type="radio" name="sexo" id="Hombre" value="Hombre">
+	<label for="Hombre">Hombre</label>
+	<input type="radio" name="sexo" id="Mujer" value="Mujer">
+	<label for="Mujer">Mujer</label></td>
+</tr>
+<tr bgcolor="00FFFF">
+	<td> <label for="edad"></label>Seleccione la Edad </td>
+	<td> <select name="edad" id="edad">
+<option value="Menor de 18"><18</option>
+<option value="18">18</option>
+<option value="Mayor de 18">>18</option>
+</select>
+</td>	
+<tr bgcolor="00FFFF"><td colspan="2"><input type="file" name="archivo" id="archivo"></td></tr>
+</table>
+<br>
+<input type="button" value="Pincha aquí" >
+<input type="reset" value="Reiniciar" >
+<input type="submit" value="Enviar" >
+
+</body>
+</html>
